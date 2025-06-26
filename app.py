@@ -10,9 +10,9 @@ import plotly.graph_objects as go
 @st.cache_resource
 def load_model():
     try:
-        return load('sales_forecasting_final_model.pkl')
+        return load('sales_forecasting_modell.pkl')
     except FileNotFoundError:
-        st.error("Model file 'sales_forecasting_final_model.pkl' not found. Please upload the model file.")
+        st.error("Model file 'sales_forecasting_modell.pkl' not found. Please upload the model file.")
         return None
 
 model = load_model()
